@@ -34,7 +34,7 @@ class HomePage extends StatelessWidget {
                             ),
                           ),
                           Text(
-                            'Ikhtiar Oktafio Wibowo 👏',
+                            'Haikal Trigunadi',
                             style: kHeading6.copyWith(
                               color: kMatterhornBlack,
                             ),
