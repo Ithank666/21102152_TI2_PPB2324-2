@@ -17,29 +17,17 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
         return android;
       case TargetPlatform.iOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for ios - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for windows - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return windows;
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -59,4 +47,43 @@ class DefaultFirebaseOptions {
     projectId: 'fir-aut-21102152',
     storageBucket: 'fir-aut-21102152.appspot.com',
   );
+
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyC7EJ7y7woEbAKIdjjcK5TS22ZsK8CT2Ng',
+    appId: '1:777451080167:web:fa4861729c4a7cb3641542',
+    messagingSenderId: '777451080167',
+    projectId: 'fir-aut-21102152',
+    authDomain: 'fir-aut-21102152.firebaseapp.com',
+    storageBucket: 'fir-aut-21102152.appspot.com',
+    measurementId: 'G-MBQ67NN13N',
+  );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyCbrmrtu1dsDKcERgeI8CAHgdivABTTgdw',
+    appId: '1:777451080167:ios:ee8438fb94f2e424641542',
+    messagingSenderId: '777451080167',
+    projectId: 'fir-aut-21102152',
+    storageBucket: 'fir-aut-21102152.appspot.com',
+    iosBundleId: 'com.example.praktikum09FirebaseAuth',
+  );
+
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: 'AIzaSyCbrmrtu1dsDKcERgeI8CAHgdivABTTgdw',
+    appId: '1:777451080167:ios:ee8438fb94f2e424641542',
+    messagingSenderId: '777451080167',
+    projectId: 'fir-aut-21102152',
+    storageBucket: 'fir-aut-21102152.appspot.com',
+    iosBundleId: 'com.example.praktikum09FirebaseAuth',
+  );
+
+  static const FirebaseOptions windows = FirebaseOptions(
+    apiKey: 'AIzaSyC7EJ7y7woEbAKIdjjcK5TS22ZsK8CT2Ng',
+    appId: '1:777451080167:web:5ba782d34108f84a641542',
+    messagingSenderId: '777451080167',
+    projectId: 'fir-aut-21102152',
+    authDomain: 'fir-aut-21102152.firebaseapp.com',
+    storageBucket: 'fir-aut-21102152.appspot.com',
+    measurementId: 'G-7NQ0XDB14G',
+  );
+
 }
