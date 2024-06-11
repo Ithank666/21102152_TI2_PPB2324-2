@@ -9,7 +9,7 @@ import 'package:praktikum_09_firebase_auth/ui/phone_auth_screen.dart';
 import '../utils/routes.dart';
 
 class LoginScreen extends StatefulWidget {
-  const LoginScreen({Key? key}) : super(key: key);
+  const LoginScreen({super.key});
 
   @override
   State<LoginScreen> createState() => _LoginScreenState();

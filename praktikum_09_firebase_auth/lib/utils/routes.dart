@@ -23,6 +23,7 @@ Route? generateRoute(RouteSettings settings) {
   return route;
 }
 
+// ignore: non_constant_identifier_names
 final NAV_KEY = GlobalKey<NavigatorState>();
 const String rLogin = '/login';
 const String rRegister = '/register';

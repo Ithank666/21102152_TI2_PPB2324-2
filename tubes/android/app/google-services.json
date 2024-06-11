@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1042225486323",
+    "project_id": "project-siu-706cc",
+    "storage_bucket": "project-siu-706cc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1042225486323:android:efd926e66cabd9e919da86",
+        "android_client_info": {
+          "package_name": "com.example.tubes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfnva1nNtqbRdptcn3vp92JsitF6YyGPs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

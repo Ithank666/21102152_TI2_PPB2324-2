@@ -12,7 +12,20 @@
           "package_name": "com.example.praktikum_09_firebase_auth"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "777451080167-o3orqlqhb4mu0tqqesv15n81cb4tlft3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.praktikum_09_firebase_auth",
+            "certificate_hash": "648022544e69763d508571fc18afa631abff76d1"
+          }
+        },
+        {
+          "client_id": "777451080167-b8eerp1ef29ckcemtcb7mpfon9hsom02.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyCWew575j52yEdKGdZvF5M8KEm2g2IoOmg"
@@ -20,7 +33,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "777451080167-b8eerp1ef29ckcemtcb7mpfon9hsom02.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "777451080167-1gh1svq6mid1om5vb92lt297tkgc544l.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.praktikum09FirebaseAuth"
+              }
+            }
+          ]
         }
       }
     }
