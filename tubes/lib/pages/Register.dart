@@ -50,7 +50,7 @@ class _RegisterState extends State<Register> {
               const SizedBox(height: 10),
               Text(
                 'Transfer uang ke banyak bank tanpa biaya admin.\n'
-                'Isi ulang ke e-wallet gratis? kami menangkapmu!',
+                'Isi ulang ke e-wallet gratis? kami bisa!',
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 16,
@@ -116,9 +116,12 @@ class _RegisterState extends State<Register> {
               const Spacer(flex: 3),
               ElevatedButton(
                 onPressed: _isOtpSent ? _verifyOtp : _sendOtp,
-                child: Text(_isOtpSent ? 'Submit' : 'Next'),
+                child: Text(
+                  _isOtpSent ? 'Submit' : 'Next',
+                  style: TextStyle(color: Colors.white),
+                ),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.blue.shade700,
+                  backgroundColor: Color(0xFF248EA9),
                   padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 15),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(30),

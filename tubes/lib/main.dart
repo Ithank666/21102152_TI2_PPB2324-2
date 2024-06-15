@@ -5,7 +5,11 @@ import 'package:tubes/pages/home_page.dart';
 import 'package:tubes/pages/register.dart';
 import 'package:tubes/pages/DataDiri.dart';
 import 'package:tubes/pages/beranda.dart';
-import 'package:tubes/pages/login.dart'; // Import halaman login
+import 'package:tubes/pages/login.dart';
+import 'package:tubes/pages/transfer.dart'; // Tambahkan import
+import 'package:tubes/pages/qris_page.dart'; // Tambahkan import
+import 'package:tubes/pages/investment_page.dart'; // Tambahkan import
+import 'package:tubes/pages/profile.dart'; // Tambahkan import
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -28,7 +32,11 @@ class MyApp extends StatelessWidget {
         '/register': (context) => Register(),
         '/data_diri': (context) => DataDiri(),
         '/beranda': (context) => Beranda(),
-        '/login': (context) => Login(), // Tambahkan route login
+        '/login': (context) => Login(),
+        '/transfer': (context) => TransferPage(), // Tambahkan route
+        '/qris': (context) => QrisPage(), // Tambahkan route
+        '/investment': (context) => InvestmentPage(), // Tambahkan route
+        '/profile': (context) => ProfilePage(), // Tambahkan route
       },
     );
   }
